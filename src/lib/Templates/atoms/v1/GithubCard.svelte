@@ -11,7 +11,7 @@
     let textColor = lightOrDark(Repo.languageColor) === "dark" ? "text-white" : "text-black"
 </script>
 
-<div class="bg-base-200 rounded-2xl w-full relative">
+<div class="bg-base-200 rounded-2xl w-full transition duration-500 relative border-2 border-secondary border-opacity-0 hover:z-20 hover:scale-105 hover:border-opacity-100 hover:-translate-y-2">
     <p 
         aria-hidden="true"
         on:click={() => window.open(Repo.link, "_blank")}
@@ -39,17 +39,3 @@
         </div>
     </div>
 </div>
-<!-- 
-export interface IRepo {
-    owner: string;
-    link: string;
-    description: string;
-    image: string;
-    website: string;
-    language?: string;
-    languageColor?: string;
-    stars: number;
-    forks: number;
-    // Changed 'repo' to 'title'
-    repo?: string;
-    title?: string; -->
