@@ -12,3 +12,23 @@ export interface IRepo {
     repo?: string;
     title?: string;
 }
+
+export interface IInternalWebsiteLinks {
+    Prototypes: {
+        display: string;
+        url: string;
+        urlBlank?: boolean|null;
+        description: string;
+        img: string|null;
+        inDevelopment: number;
+        github?: string;
+        
+    }
+    Information: {
+        display: string;
+        url: string;
+        description: string;
+        img: string|null;
+        inDevelopment: number;
+    }
+}
