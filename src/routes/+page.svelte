@@ -16,8 +16,9 @@
 <svelte:head>
     <title>Jop's CodingBar</title>
 </svelte:head>
-
-{#if pageType === 'formal'}
-    <FormalPage />
-{/if}
+<div class="overflow-x-hidden">
+    {#if pageType === 'formal'}
+        <FormalPage />
+    {/if}
+</div>
 
