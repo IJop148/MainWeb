@@ -1,13 +1,13 @@
 <script lang="ts">
     import GithubFetch from "$lib/data/API/Github";
     import { onMount } from "svelte";
-    import type { IRepo } from "$lib/util/global.interface";
+    import type { IRepoStarred } from "$lib/util/global.interface";
     import GithubCard from "../atoms/v1/GithubCard.svelte";
     import GeneralPage from "../atoms/v1/GeneralPage.svelte";
     import PrototypeCard from "../atoms/v1/PrototypeCard.svelte";
     import InternalWebsiteLinks from "$lib/data/StaticInformation/InternalWebsiteLinks";
 
-    let repos: IRepo[];
+    let repos: IRepoStarred[];
     onMount(async () => {
         repos = await GithubFetch();
         console.log(repos)
